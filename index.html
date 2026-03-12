@@ -1,0 +1,32 @@
+<div class="overlay"></div>
+
+    <div id="main-shell">
+        <div class="terminal-box">
+            <h1>[RESTRITO]</h1>
+            <p>Acesso ao Nível V.</p>
+            <p>Quantos "mini hacker" tem nos slides da aula?
+            <input type="number" id="answer" pattern="\d*" inputmode="numeric" placeholder="Digite aqui">
+            <button onclick="processAuth()">AUTENTICAR</button>
+        </div>
+    </div>
+
+    <div id="hacker-terminal">
+        <div class="critical">ALERTA: ACESSO NEGADO!</div>
+        <p style="color: white;">Iniciando contra-medidas invasivas...</p>
+        <div id="fail-logs" class="log-list"></div>
+        <div class="progress-bar-container" style="color: var(--red);">
+            <div id="fail-bar" class="progress-fill"></div>
+        </div>
+        <p id="fail-status" style="color: var(--red);">ESTADO: AGUARDANDO RESPOSTA...</p>
+    </div>
+
+    <div id="success-screen">
+        <h2 style="color: var(--blue);">> ACESSO CONCEDIDO</h2>
+        <div id="success-logs" class="log-list"></div>
+        <div class="progress-bar-container">
+            <div id="success-bar" class="progress-fill"></div>
+        </div>
+        <p>REDIRECIONANDO PARA CANAL SEGURO...</p>
+    </div>
+
+    <canvas id="matrixCanvas"></canvas>
