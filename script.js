@@ -1,4 +1,4 @@
-const DESTINO = "https://forms.gle/SEU_LINK_AQUI"; // Coloque seu link real aqui
+const DESTINO = "https://forms.office.com/r/0bfxeDyQXh?origin=lprLink"; // Coloque seu link real aqui
 
 function processAuth() {
     const val = document.getElementById('answer').value;
