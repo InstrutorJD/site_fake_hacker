@@ -1,11 +1,21 @@
-<div class="overlay"></div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SISTEMA RESTRITO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="overlay"></div>
 
     <div id="main-shell">
         <div class="terminal-box">
             <h1>[RESTRITO]</h1>
             <p>Acesso ao Nível V.</p>
-            <p>Quantos "mini hacker" tem nos slides da aula?
-            <input type="number" id="answer" pattern="\d*" inputmode="numeric" placeholder="Digite aqui">
+            <p> Quantos "Mini hacker" tinha nos slides da aula?</p>
+            <input type="number" id="answer" pattern="\d*" inputmode="numeric" placeholder="CÓDIGO">
             <button onclick="processAuth()">AUTENTICAR</button>
         </div>
     </div>
@@ -14,19 +24,23 @@
         <div class="critical">ALERTA: ACESSO NEGADO!</div>
         <p style="color: white;">Iniciando contra-medidas invasivas...</p>
         <div id="fail-logs" class="log-list"></div>
-        <div class="progress-bar-container" style="color: var(--red);">
+        <div class="progress-bar-container" style="color: #ff0000;">
             <div id="fail-bar" class="progress-fill"></div>
         </div>
-        <p id="fail-status" style="color: var(--red);">ESTADO: AGUARDANDO RESPOSTA...</p>
+        <p id="fail-status" style="color: #ff0000;">ESTADO: AGUARDANDO RESPOSTA...</p>
     </div>
 
     <div id="success-screen">
-        <h2 style="color: var(--blue);">> ACESSO CONCEDIDO</h2>
+        <h2 style="color: #00ccff;">> ACESSO CONCEDIDO</h2>
         <div id="success-logs" class="log-list"></div>
-        <div class="progress-bar-container">
+        <div class="progress-bar-container" style="color: #00ccff;">
             <div id="success-bar" class="progress-fill"></div>
         </div>
         <p>REDIRECIONANDO PARA CANAL SEGURO...</p>
     </div>
 
     <canvas id="matrixCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
