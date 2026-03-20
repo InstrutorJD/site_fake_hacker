@@ -2,7 +2,7 @@ const DESTINO = "https://forms.office.com/r/0bfxeDyQXh?origin=lprLink"; // Coloq
 
 function processAuth() {
     const val = document.getElementById('answer').value;
-    if (val === "5") {
+    if (val === "01244466666") {
         runSuccessSequence();
     } else {
         runFailSequence();
